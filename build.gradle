@@ -16,9 +16,9 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
-plugins {
-    id "com.jfrog.bintray" version "1.7"
-}
+//plugins {
+//    id "com.jfrog.bintray" version "1.7"
+//}
 allprojects {
     repositories {
         google()

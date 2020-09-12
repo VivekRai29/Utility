@@ -9,7 +9,7 @@ install {
                 packaging 'aar'
                 groupId 'com.utilitymodule'
                 artifactId 'androidlibrary'
-                name 'utilitylibrary'
+                name 'utilitymodule'
                 description 'An Utility library.'
                 url 'https://github.com/VivekRai29/Utility'
 
