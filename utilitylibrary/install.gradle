@@ -1,0 +1,39 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.utilitylibrary'
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.utilitylibrary'
+                artifactId 'androidlibrary'
+                name 'utilitylibrary'
+                description 'An Utility library.'
+                url 'https://github.com/VivekRai29/Utility'
+
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'vivekrai29'
+                        name 'Vivek Rai'
+                        email 'vivekrai29@gmail.com'
+                    }
+                }
+
+                scm {
+                    connection 'https://github.com/VivekRai29/Utility.git'
+                    developerConnection 'https://github.com/VivekRai29/Utility.git'
+                    url 'https://github.com/VivekRai29/Utility'
+                }
+            }
+        }
+    }
+}
