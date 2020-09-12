@@ -1,4 +1,11 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+project.ext.buildToolsVersion = '30.0.1'
+project.ext.minSdkVersion = 21
+project.ext.sdkVersion = 30
+
+project.ext.libVersion = "1.0.0"
+
 buildscript {
     repositories {
         google()

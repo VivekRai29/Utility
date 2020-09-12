@@ -22,7 +22,7 @@ artifacts {
 }
 
 //Properties properties = new Properties()
-//properties.load( new FileInputStream("local.properties"))
+//properties.load(new FileInputStream("local.properties"))
 
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
@@ -33,12 +33,12 @@ bintray {
     key = properties.getProperty("bintray.apikey")
 
     pkg {
-        repo = 'maven'
-        name = 'com.utilitymodule'
+        repo = bintrayRepo
+        name = bintrayName
         configurations = ['archives']
-        desc = 'An Utility library.'
-        websiteUrl = 'https://github.com/VivekRai29/Utility'
-        vcsUrl = 'https://github.com/VivekRai29/Utility.git.git'
+        desc = libraryDescription
+        websiteUrl = siteUrl
+        vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
         publish = true
         publicDownloadNumbers = true
