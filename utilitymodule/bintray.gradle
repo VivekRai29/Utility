@@ -1,5 +1,4 @@
 apply plugin: 'com.jfrog.bintray'
-
 version = '1.0.0'
 
 task sourcesJar(type: Jar) {
@@ -22,8 +21,11 @@ artifacts {
     archives sourcesJar
 }
 
+//Properties properties = new Properties()
+//properties.load( new FileInputStream("local.properties"))
+
 Properties properties = new Properties()
-properties.load( new FileInputStream("local.properties"))
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
 // Bintray
 bintray {
@@ -32,7 +34,7 @@ bintray {
 
     pkg {
         repo = 'maven'
-        name = 'com.utilitylibrary'
+        name = 'com.utilitymodule'
         configurations = ['archives']
         desc = 'An Utility library.'
         websiteUrl = 'https://github.com/VivekRai29/Utility'

@@ -1,4 +1,4 @@
-package com.utilitylibrary;
+package com.utilitymodule;
 
 import org.junit.Test;
 

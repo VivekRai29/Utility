@@ -1,4 +1,4 @@
-package com.utilitylibrary;
+package com.utilitymodule;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.utilitylibrary", appContext.getPackageName());
+        assertEquals("com.utilitymodule.test", appContext.getPackageName());
     }
 }
